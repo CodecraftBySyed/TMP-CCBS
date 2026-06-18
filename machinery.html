@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machinery & Capabilities | Tirupattur Multi Print</title>
+  <meta name="description" content="Explore the full machinery list for TMP's printing, finishing and binding capabilities in Tirupattur. Learn how each process works and why it is used." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-brand text-soft">
+  <div id="header-placeholder"></div>
+  <main class="px-5 pb-16 sm:px-8 lg:px-12">
+    <section class="relative overflow-hidden rounded-[2rem] border border-gold/15 bg-[#0b0b0b] px-5 py-16 sm:px-10 lg:px-14" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto space-y-6 text-center">
+        <p class="text-sm uppercase tracking-[0.3em] text-gold">Our Machinery & Capabilities</p>
+        <h1 class="text-4xl font-display text-soft sm:text-5xl">Print, finish and bind with clarity and premium detail.</h1>
+        <p class="mx-auto max-w-3xl text-gray-300">Discover the machines behind TMP's premium wedding cards, brochures, packaging, diaries and customised work — every process built for consistent quality.</p>
+      </div>
+    </section>
+
+    <section class="mt-10 max-w-6xl mx-auto" data-aos="fade-up">
+      <div id="machine-filter" class="flex flex-wrap gap-3"></div>
+    </section>
+
+    <section class="mt-12 max-w-6xl mx-auto grid gap-6 lg:grid-cols-3" id="machine-grid" data-aos="fade-up">
+      <!-- machine cards are rendered here -->
+    </section>
+  </main>
+
+  <div id="machine-modal" class="modal-backdrop">
+    <div id="machine-modal-body" class="modal-panel"></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="js/includeHTML.js" defer></script>
+  <script src="js/machinery.js" defer></script>
+</body>
+</html>

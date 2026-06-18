@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Work Gallery | Tirupattur Multi Print</title>
+  <meta name="description" content="Browse TMP's job work gallery of wedding cards, brochures, calendars, diaries and packaging examples from Tirupattur Multi Print." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-brand text-soft">
+  <div id="header-placeholder"></div>
+  <main class="px-5 pb-16 sm:px-8 lg:px-12">
+    <section class="rounded-[2rem] border border-gold/15 bg-[#0d0d0d] px-5 py-16 sm:px-10 lg:px-14" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-sm uppercase tracking-[0.3em] text-gold">Our Work</p>
+        <h1 class="mt-4 text-4xl font-display text-soft sm:text-5xl">Real job work samples from Tirupattur Multi Print</h1>
+        <p class="mt-4 mx-auto max-w-3xl text-gray-300">A curated gallery of premium wedding cards, brochures, calendars, diaries and packaging examples showing TMP's finishing and print range.</p>
+      </div>
+    </section>
+
+    <section class="mt-10 max-w-6xl mx-auto" data-aos="fade-up">
+      <div id="gallery-filter" class="flex flex-wrap gap-3"></div>
+    </section>
+
+    <section class="mt-10 grid gap-6 lg:grid-cols-3" id="gallery-grid" data-aos="fade-up">
+      <!-- gallery items go here -->
+    </section>
+  </main>
+
+  <div id="gallery-lightbox" class="lightbox-backdrop" aria-hidden="true">
+    <div class="lightbox-panel relative p-6">
+      <button type="button" class="lightbox-close absolute right-6 top-6 text-4xl text-gray-300">&times;</button>
+      <img id="lightbox-image" src="" alt="Gallery preview" onerror="this.src='images/logo/tmp-mark.svg'; this.style.objectFit='contain'" class="mb-6 rounded-3xl object-cover" />
+      <h2 id="lightbox-title" class="text-3xl font-display text-soft"></h2>
+      <p id="lightbox-description" class="mt-4 text-gray-300 leading-7"></p>
+      <div class="mt-8 flex gap-3">
+        <button type="button" onclick="showPrevGalleryItem()" class="btn-gold rounded-full px-5 py-3">Previous</button>
+        <button type="button" onclick="showNextGalleryItem()" class="rounded-full border border-gold/30 px-5 py-3 text-soft transition hover:bg-white/5">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="js/includeHTML.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+</body>
+</html>

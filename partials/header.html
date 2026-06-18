@@ -1,0 +1,44 @@
+<!-- Header partial: injected into every page via includeHTML.js -->
+<header class="bg-black text-soft p-4 md:p-6">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo/logo.png" alt="TMP logo" class="h-14 w-14 object-contain rounded-full" onerror="this.style.display='none'">
+      <div>
+        <div class="text-xl font-display text-gold">Tirupattur Multi Print</div>
+        <div class="text-xs text-gray-300" data-i18n="site.tagline">We Print Your Vision, We Deliver Perfection.</div>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="index.html" class="nav-link text-sm" data-i18n="nav.home">Home</a>
+      <a href="machinery.html" class="nav-link text-sm" data-i18n="nav.machinery">Machinery</a>
+      <a href="gallery.html" class="nav-link text-sm" data-i18n="nav.gallery">Gallery</a>
+      <a href="contact.html#reviews" class="nav-link text-sm" data-i18n="nav.visit">Visit Us</a>
+      <a href="contact.html" class="btn-enquire ml-4 inline-block px-4 py-2 rounded text-black bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-600 font-semibold" data-i18n="nav.enquire">Enquire Now</a>
+      <button id="langToggle" class="ml-4 px-3 py-2 rounded border border-gray-700 text-sm">தமிழ்</button>
+    </nav>
+
+    <!-- Mobile hamburger -->
+    <div class="md:hidden">
+      <button id="mobileMenuBtn" aria-label="Open menu" class="p-2 bg-gray-900 rounded">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slide-in mobile nav -->
+  <div id="mobileNav" class="fixed inset-0 bg-black bg-opacity-90 transform translate-x-full transition-transform z-50">
+    <div class="p-6">
+      <button id="mobileCloseBtn" class="mb-6 p-2 text-white">Close ✕</button>
+      <ul class="flex flex-col gap-4 text-lg">
+        <li><a href="index.html" class="mobile-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="machinery.html" class="mobile-link" data-i18n="nav.machinery">Machinery</a></li>
+        <li><a href="gallery.html" class="mobile-link" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="contact.html#reviews" class="mobile-link" data-i18n="nav.visit">Visit Us</a></li>
+        <li><a href="contact.html" class="btn-enquire block mt-4 px-4 py-2 rounded text-black bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-600 font-semibold" data-i18n="nav.enquire">Enquire Now</a></li>
+        <li><button id="langToggleMobile" class="mt-4 px-4 py-2 rounded border border-gray-700 text-sm">தமிழ்</button></li>
+      </ul>
+    </div>
+  </div>
+
+</header>
