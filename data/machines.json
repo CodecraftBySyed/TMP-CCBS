@@ -1,0 +1,74 @@
+[
+  {
+    "id":"kodak-q800",
+    "name":"Kodak Q800 Plate Making System",
+    "shortDesc":"High-precision Computer-to-Plate technology for offset printing preparation.",
+    "category":"Prepress",
+    "image":"images/Kodak Q800 Plate Making System.jpg",
+    "fullDesc":"The Kodak Q800 Plate Making System converts digital artwork directly into printing plates with exceptional accuracy and consistency. This technology improves print quality, reduces setup time, and ensures reliable production for commercial printing projects.",
+    "howItWorks":"Computer-to-Plate (CtP) imaging transfers digital files onto plates using precise exposure and development processes.",
+    "applications":["Offset printing preparation","Brochures","Catalogues"],
+    "benefits":["High accuracy","Reduced setup time","Consistent plate quality"],
+    "samples":["wedding-cards","brochures"]
+  },
+  {
+    "id":"accuriopress-c4070",
+    "name":"AccurioPress C4070 Digital Printing System",
+    "shortDesc":"Professional digital color printing for premium commercial applications.",
+    "category":"Digital Printing",
+    "image":"images/AccurioPress C4070 Digital Printing System.jpg",
+    "fullDesc":"The AccurioPress C4070 delivers vibrant colors, sharp details, and high-speed production. It is ideal for brochures, invitations, catalogs, marketing materials, and customized print jobs.",
+    "howItWorks":"High-speed digital electrophotographic printing with advanced color management and finishing options.",
+    "applications":["Brochures","Invitations","Catalogues","Personalized print"],
+    "benefits":["Vibrant color","Short runs cost-effective","Fast turnaround"],
+    "samples":["brochures","business-cards"]
+  },
+  {
+    "id":"sc100-z",
+    "name":"SC100 Z Cutting Machine",
+    "shortDesc":"Precision cutting system for professional finishing.",
+    "category":"Finishing",
+    "image":"images/SC100 Z Cutting Machine.png",
+    "fullDesc":"Ensures clean edges, accurate dimensions, and consistent finishing across all printed materials including brochures, cards, books, and packaging products.",
+    "howItWorks":"Automated cutting and trimming using precise Z-knife or programmable tooling.",
+    "applications":["Business cards","Books","Packaging"],
+    "benefits":["Accurate cuts","Reduced waste","Consistent finish"],
+    "samples":["business-cards","packaging"]
+  },
+  {
+    "id":"die-cut-machine",
+    "name":"Die-Cut Machine",
+    "shortDesc":"Custom shape cutting for premium print products.",
+    "category":"Finishing",
+    "image":"images/Die-Cut Machine.webp",
+    "fullDesc":"Creates unique shapes and designs for invitations, packaging boxes, labels, folders, and specialty print materials.",
+    "howItWorks":"Die tooling presses shapes into substrates to produce custom contours and forms.",
+    "applications":["Labels","Packaging boxes","Specialty invitations"],
+    "benefits":["Custom shapes","High repeatability","Professional finish"],
+    "samples":["packaging","wedding-cards"]
+  },
+  {
+    "id":"knife-grinding",
+    "name":"Knife Grinding Machine",
+    "shortDesc":"Maintains cutting blade accuracy and performance.",
+    "category":"Maintenance",
+    "image":"images/knife Grinding Machine.jpg",
+    "fullDesc":"Used for sharpening industrial cutting blades to ensure precision cutting, reduced wastage, and consistent production quality.",
+    "howItWorks":"Precision grinding restores blade geometry and sharpness for high-quality cuts.",
+    "applications":["Blade maintenance","Cutting accuracy","Reduced wastage"],
+    "benefits":["Longer blade life","Consistent cuts","Lower downtime"],
+    "samples":["packaging"]
+  },
+  {
+    "id":"micro-bond-lamination",
+    "name":"Micro Bond Lamination Machine",
+    "shortDesc":"Protective lamination for durability and premium appearance.",
+    "category":"Finishing",
+    "image":"images/Micro Bond Lamination Machine.jpg",
+    "fullDesc":"Applies protective laminate coatings to printed products, enhancing durability, moisture resistance, and visual appeal.",
+    "howItWorks":"Roll-to-roll lamination with heat and pressure for even coating application.",
+    "applications":["Menus","Packaging","Brochures","Business cards"],
+    "benefits":["Enhanced durability","Improved appearance","Moisture resistance"],
+    "samples":["brochures","business-cards"]
+  }
+]
