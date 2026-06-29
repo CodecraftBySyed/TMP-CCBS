@@ -1,7 +1,6 @@
 [
   {"id":"wedding-cards","title":"Wedding Cards","category":"Wedding","image":"images/Wedding Cards.png"},
   {"id":"wedding-2","title":"Wedding Card Sample","category":"Wedding","image":"images/Wedding card sample.png"},
-  {"id":"packaging","title":"Packaging","category":"Packaging","image":"images/Packaging.png"},
   {"id":"brochures","title":"Brochures","category":"Brochures","image":"images/brochures.png"},
   {"id":"catalogues","title":"Catalogues","category":"Catalogues","image":"images/catalogues.png"},
   {"id":"diaries","title":"Diaries","category":"Diaries","image":"images/d.png"},
