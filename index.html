@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tirupattur Multi Print Pvt Ltd — Professional Printing & Packaging</title>
+  <meta name="description" content="Tirupattur Multi Print Pvt Ltd — Premium printing and packaging solutions in Tirupattur, Tamil Nadu. Modern machinery, quality finishes, reliable service." />
+  <meta property="og:title" content="Tirupattur Multi Print Pvt Ltd" />
+  <meta property="og:description" content="Professional printing and packaging solutions in Tirupattur, Tamil Nadu." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/favico/favicon.ico" type="image/png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Using Tailwind CDN for development and mobile responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-poppins text-gray-800 bg-[color:var(--section-bg)]">
+  <header class="fixed w-full z-40 bg-[color:var(--header-bg)] shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3 min-w-0">
+        <img src="images/logo/logo.png" alt="TMP Logo" class="h-12 w-12 object-contain" onerror="this.style.display='none'"/>
+        <div>
+          <h1 class="text-xl font-bold text-[color:var(--text-color)] truncate max-w-[160px] sm:max-w-none">Tirupattur Multi Print Pvt Ltd</h1>
+          <p class="text-sm text-gray-500">Printing Solutions</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 min-w-0">
+        <label for="langSelect" class="sr-only">Select Language</label>
+        <select id="langSelect" class="border rounded px-2 py-1 text-sm appearance-auto z-10" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <!-- Google Translate widget mounts here (hidden) -->
+        <div id="google_translate_element" style="display:none"></div>
+        <a href="#contact" class="hidden md:inline-block text-sm text-[color:var(--primary-color)] font-medium">Contact</a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded border" aria-label="Open menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu (hidden on md+) -->
+    <div id="mobileMenu" class="hidden md:hidden fixed inset-0 z-50">
+      <div class="absolute inset-0 bg-black bg-opacity-50" id="mobileMenuBg"></div>
+      <div class="absolute top-16 right-4 left-4 bg-white rounded shadow p-4">
+        <div class="flex flex-col gap-3">
+          <a href="#machines" class="block py-2">Machinery</a>
+          <a href="#gallery" class="block py-2">Gallery</a>
+          <a href="#contact" class="block py-2">Contact</a>
+          <button id="mobileMenuClose" class="mt-2 px-3 py-2 bg-gray-100 rounded">Close</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-14 md:pt-16">
+    <!-- HERO -->
+    <section class="bg-[color:var(--section-bg)] py-12 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-6 lg:gap-12">
+          <!-- Content -->
+          <div class="w-full lg:w-1/2" data-aos="fade-up">
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-[color:var(--text-color)] max-w-2xl">We Print Your Vision, We Deliver Perfection.</h2>
+            <p class="mt-4 text-sm md:text-base text-gray-600 max-w-xl">Professional printing and packaging solutions powered by modern technology, precision, and quality craftsmanship.</p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-4">
+              <a id="ctaContact" href="#contact" class="bg-[color:var(--primary-color)] text-white px-5 py-3 rounded shadow hover:opacity-95 min-h-[44px] w-full sm:w-auto text-center">Location</a>
+              <button id="heroWhatsapp" class="bg-green-500 text-white px-5 py-3 rounded shadow flex items-center gap-2 min-h-[44px] w-full sm:w-auto justify-center"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+            </div>
+            <ul class="mt-6 text-sm text-gray-600 space-y-2">
+              <li>Experience • Quality Commitment • Modern Machinery • Customer Satisfaction</li>
+            </ul>
+          </div>
+          <!-- Image -->
+          <div class="w-full lg:w-1/2 flex justify-center" data-aos="zoom-in">
+            <div class="w-full max-w-3xl">
+              <img src="images/hero/hero2.png" alt="Printing press" loading="lazy" class="w-full h-auto object-cover rounded-xl shadow-lg" onerror="this.src='images/hero/hero.png'" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="py-12 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+        <h3 class="text-2xl md:text-4xl font-bold">About TMP</h3>
+        <p class="mt-4 text-sm md:text-base text-gray-600 max-w-3xl mx-auto">Tirupattur Multi Print Pvt Ltd brings decades of industry experience, combining modern machinery with skilled craftsmanship to deliver premium printed materials and packaging solutions. We prioritize quality, speed, and customer satisfaction for every project.</p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="py-12 md:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h4 class="text-2xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Why Choose TMP</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          <div class="p-6 rounded-xl shadow hover:translate-y-[-6px] transition-transform" data-aos="fade-up">
+            <i class="fa-solid fa-award text-[color:var(--primary-color)] text-2xl"></i>
+            <h5 class="mt-3 font-semibold">Quality Printing</h5>
+            <p class="text-sm md:text-base text-gray-500">Consistent, vivid prints with strict quality control.</p>
+          </div>
+          <div class="p-6 rounded-xl shadow hover:translate-y-[-6px] transition-transform" data-aos="fade-up" data-aos-delay="50">
+            <i class="fa-solid fa-industry text-[color:var(--primary-color)] text-2xl"></i>
+            <h5 class="mt-3 font-semibold">Advanced Machinery</h5>
+            <p class="text-sm md:text-base text-gray-500">Cutting-edge equipment for scalable production.</p>
+          </div>
+          <div class="p-6 rounded-xl shadow hover:translate-y-[-6px] transition-transform" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-truck-fast text-[color:var(--primary-color)] text-2xl"></i>
+            <h5 class="mt-3 font-semibold">Fast Delivery</h5>
+            <p class="text-sm md:text-base text-gray-500">Reliable timelines and on-time dispatch.</p>
+          </div>
+          <div class="p-6 rounded-xl shadow hover:translate-y-[-6px] transition-transform" data-aos="fade-up" data-aos-delay="150">
+            <i class="fa-solid fa-handshake text-[color:var(--primary-color)] text-2xl"></i>
+            <h5 class="mt-3 font-semibold">Reliable Service</h5>
+            <p class="text-sm md:text-base text-gray-500">Customer-first approach with responsive support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MACHINERY -->
+    <section id="machines" class="py-12 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h4 class="text-2xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Our Machinery</h4>
+        <div id="machinesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-12 md:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h4 class="text-2xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Job Work Gallery</h4>
+        <div id="galleryFilters" class="flex gap-2 justify-center mb-6 flex-wrap"></div>
+        <div id="galleryGrid" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6"></div>
+      </div>
+    </section>
+
+    <!-- WORK PROCESS -->
+    <section id="process" class="py-12 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h4 class="text-2xl md:text-4xl font-bold text-center mb-6" data-aos="fade-up">Work Process</h4>
+        <ol class="timeline max-w-4xl mx-auto">
+          <li>Design & Planning</li>
+          <li>Plate Making</li>
+          <li>Printing</li>
+          <li>Finishing</li>
+          <li>Quality Inspection</li>
+          <li>Delivery</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12 md:py-20 bg-gradient-to-br from-slate-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] items-start">
+          <div data-aos="fade-up" class="rounded-3xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+            <div class="inline-flex items-center gap-2 rounded-full bg-[color:var(--primary-color)]/10 px-3 py-1 text-sm font-medium text-[color:var(--primary-color)]">
+              <i class="fa-solid fa-headset"></i>
+              Get in touch
+            </div>
+            <h4 class="mt-4 text-2xl md:text-4xl font-bold text-gray-900">Contact Us</h4>
+            <p class="mt-3 text-sm md:text-base text-gray-600">Reach out for printing and packaging quotes, factory visits, or general enquiries.</p>
+
+            <div class="mt-6 space-y-4 text-sm text-gray-700">
+              <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-gray-500 mb-1">Company</p>
+                <p class="font-semibold text-gray-900">Tirupattur Multi Print Pvt Ltd</p>
+                <p class="mt-1">Managing Director: <span class="font-medium">Ln. P.R. Murugesan</span></p>
+                <p class="mt-1">Registration No.: <span class="font-medium">U22219TN2020PTC139059</span></p>
+              </div>
+
+              <div class="grid gap-3 sm:grid-cols-2">
+                <a id="callNow" href="tel:+919843983762" class="flex items-start gap-3 rounded-2xl border border-gray-200 p-4 transition hover:border-[color:var(--primary-color)] hover:shadow-sm">
+                  <div class="mt-0.5 rounded-full bg-green-100 p-2 text-green-600"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Phone</p>
+                    <p class="font-medium text-gray-900">+91 98439 83762</p>
+                  </div>
+                </a>
+                <a id="emailNow" href="mailto:tptmultiprint@gmail.com" class="flex items-start gap-3 rounded-2xl border border-gray-200 p-4 transition hover:border-[color:var(--primary-color)] hover:shadow-sm">
+                  <div class="mt-0.5 rounded-full bg-blue-100 p-2 text-blue-600"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Email</p>
+                    <p class="font-medium text-gray-900">tptmultiprint@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-gray-500 mb-2">Additional Contacts</p>
+                <p class="mt-1"><span class="font-medium">Other Phones:</span> +91 94439 29962, +91 95785 35324</p>
+                <p class="mt-1"><span class="font-medium">Other Emails:</span> tmpdigitalprint@gmail.com, tmpoffsetprint@gmail.com</p>
+                <p class="mt-2"><span class="font-medium">Website:</span> <a id="websiteNow" class="text-[color:var(--primary-color)] hover:underline" href="https://tirupatturmultiprint.com" target="_blank" rel="noopener">tirupatturmultiprint.com</a></p>
+              </div>
+
+              <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-gray-500 mb-2">Visit Us</p>
+                <p class="mt-1"><span class="font-medium">Office:</span> #106 / 5, Cutchery Street, Tirupattur - 635 601</p>
+                <p class="mt-1"><span class="font-medium">Factory:</span> Avvai Nagar, Tirupattur - 635 601</p>
+                <p class="mt-1"><span class="font-medium">Address:</span> <span id="addressText">#106 / 5, Cutchery Street, Tirupattur - 635 601</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="50">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-[1.5rem] border border-gray-200 bg-white p-2 shadow-lg transition-transform duration-700 ease-out hover:-translate-y-1 hover:shadow-2xl">
+              <iframe
+                id="mapEmbed"
+                src=""
+                title="TMP location map"
+                width="100%"
+                height="100%"
+                class="w-full h-full rounded-[1.1rem]"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[color:var(--footer-bg)] text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <img src="images/logo/logo-text.png" alt="TMP" class="h-10 w-10 object-contain" onerror="this.style.display='none'"/>
+        <div>
+          <div class="font-bold">Tirupattur Multi Print Pvt Ltd</div>
+          <div class="text-sm">Avvai Nagar, Tirupattur, Tamil Nadu</div>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <a href="#machines" class="text-white hover:underline">Machinery</a>
+        <a href="#gallery" class="text-white hover:underline">Gallery</a>
+        <a href="#contact" class="text-white hover:underline">Contact</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 text-center text-sm text-white/90">
+      Powerd By <a href="https://codecraftbysyed-portfolio.vercel.app/" target="_blank" rel="noopener" class="underline">Codecraft By Syed</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a id="floatWhatsapp" class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center pulse w-12 h-12" title="WhatsApp">
+    <i class="fab fa-whatsapp fa-lg"></i>
+  </a>
+
+  <!-- Modal container -->
+  <div id="modalRoot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/translate.js"></script>
+  <script src="js/machines.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    AOS.init({duration:250,once:true});
+  </script>
+</body>
+</html>
