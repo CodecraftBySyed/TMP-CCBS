@@ -1,5 +1,30 @@
 [
   {
+  "id": "lithrone-g29",
+  "name": "Lithrone G29 with Komori G429 HUV 4 Colour Offset Press",
+  "shortDesc": "High-speed, high-efficiency 4-color offset press featuring advanced H-UV curing.",
+  "category": "Printing Press",
+  "image": "images/Lithrone G29 Komori G429 HUV 4 Colour Offset Press.png",
+  "fullDesc": "Delivers exceptional print quality with instant drying capabilities using innovative H-UV technology. Engineered for high productivity and quick turnaround times on a wide variety of stocks, from thin sheets to heavy cardstock.",
+  "howItWorks": "Utilizes a 4-color offset printing process integrated with an eco-friendly H-UV inline curing system that instantly dries the ink using specific UV wavelengths.",
+  "applications": [
+    "High-end commercial print",
+    "Brochures and catalogs",
+    "Packaging blanks",
+    "Direct mail"
+  ],
+  "benefits": [
+    "Instant ink curing",
+    "Superior print clarity",
+    "Reduced environmental footprint",
+    "Versatile substrate compatibility"
+  ],
+  "samples": [
+    "commercial-brochures",
+    "premium-packaging"
+  ]
+},
+  {
     "id":"kodak-q800",
     "name":"Kodak Q800 Plate Making System",
     "shortDesc":"High-precision Computer-to-Plate technology for offset printing preparation.",
