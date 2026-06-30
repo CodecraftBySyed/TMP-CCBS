@@ -7,7 +7,7 @@ const CONFIG = {
   factoryAddress: "Avvai Nagar, Tirupattur - 635 601",
   website: "https://tirupatturmultiprint.com",
   registrationNumber: "U22219TN2020PTC139059",
-  directorName: "P.R. Murugesan",
+  directorName: "Ln. P.R. Murugesan",
   otherPhoneNumbers: ["+91 94439 29962", "+91 95785 35324"],
   otherEmails: ["tmpdigitalprint@gmail.com", "tmpoffsetprint@gmail.com"],
   // Use only the embed URL (not the full iframe tag). Example: https://www.google.com/maps/embed?pb=...
